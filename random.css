@@ -1,0 +1,21 @@
+body {
+  background: yellow;
+}
+
+h5 {
+  margin: 50px;
+}
+
+.quote_container {
+  text-align: center;
+  /*padding: 80px;*/
+  margin: 50px;
+  /*background: orange;*/
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid gray;
+}
+
+.new-quote {
+
+}
