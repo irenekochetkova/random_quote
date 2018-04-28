@@ -25,8 +25,8 @@ $(document).ready(function() {
   }
   getNewQuote();
 
-  $(".get-quote").on("click", function() {
-     // event.preventDefault();
+  $(".get-quote").on("click", function(event) {
+    event.preventDefault();
      getNewQuote();
   });
 
@@ -34,6 +34,7 @@ $(document).ready(function() {
      window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(quote + '  ---' + author));
   });
 });
+
 
 
 

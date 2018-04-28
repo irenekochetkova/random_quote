@@ -1,11 +1,12 @@
 body {
-  background: yellow;
+  background: #FFEA9C;
 }
 
 h5 {
   margin: 50px;
   font-family: Berkshire Swash;
   font-size: 25px;
+  color: #3B3624;
 
 }
 
@@ -13,22 +14,16 @@ h5 {
   text-align: center;
   margin: 50px;
   border-radius: 21px;
-  background: transparent;
-  border: 1px solid gray;
+  background: #C7B67A;
+  border: 1px ;
 }
 
-.new-quote {
-
-}
-
-.share {
-
-}
 
 .textquote {
   margin: 3%;
   font-family: Dancing Script;
   font-size: 30px;
+  color: #94F4830;
 }
 
 .textauthor {
@@ -36,4 +31,35 @@ h5 {
    text-align: right;
    font-family: Dancing Script;
    font-size: 20px;
+   color: #94F4830;
+}
+
+#buttonId {
+   
+    outline: none;
+}
+
+.color-change {
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 6px 30px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #C7B67A;
+  font-size: 1rem;
+  font-family: 'Roboto';
+  font-weight: 100;
+  border: 1px solid #fff;
+  box-shadow: 2px 2px 5px #3B3624;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+
+}
+
+
+.color-change:hover {
+  color: #94F4830;
+  border: 1px solid #94F4830;
+  box-shadow: 2px 2px 20px #3B3624;
 }
