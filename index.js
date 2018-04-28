@@ -7,20 +7,16 @@ $(document).ready(function() {
 
   function getNewQuote() {
     $.ajax({
-      url: 'http://api.forismatic.com/api/1.0/',
+      url: 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?',
       jsonp: 'jsonp',
       dataType: 'jsonp',
-      data: {
-        method: 'getQuote',
-        lang: 'en',
-        format: 'jsonp'
-      },
+  
       success: function(response) {
         quote = response.quoteText;
         author = response.quoteAuthor;
         $("#quote").text(quote);
         if (author) {
-          $("#author").text(" by" + author);
+          $("#author").text(" - " + author);
         } else {
           $("#author").text("- unkown");
         }
@@ -30,7 +26,14 @@ $(document).ready(function() {
   getNewQuote();
 
   $(".get-quote").on("click", function() {
+     // event.preventDefault();
      getNewQuote();
   });
+
+  $(".share-quote").on("click", function() {     
+     window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(quote + '  ---' + author));
+  });
 });
+
+
 

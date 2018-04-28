@@ -4,18 +4,36 @@ body {
 
 h5 {
   margin: 50px;
+  font-family: Berkshire Swash;
+  font-size: 25px;
+
 }
 
 .quote_container {
   text-align: center;
-  /*padding: 80px;*/
   margin: 50px;
-  /*background: orange;*/
-  border-radius: 20px;
+  border-radius: 21px;
   background: transparent;
   border: 1px solid gray;
 }
 
 .new-quote {
 
+}
+
+.share {
+
+}
+
+.textquote {
+  margin: 3%;
+  font-family: Dancing Script;
+  font-size: 30px;
+}
+
+.textauthor {
+   margin: 3%;
+   text-align: right;
+   font-family: Dancing Script;
+   font-size: 20px;
 }
